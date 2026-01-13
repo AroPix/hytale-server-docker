@@ -34,7 +34,7 @@ A Docker container for running a Hytale dedicated server with automatic download
 > [!IMPORTANT]
 > **First-Time Setup: Authentication Required**
 > 
-> On first startup, you'll need to authenticate via your browser. The server will display a URL in the console - just visit it and log in with your Hytale account.
+> On first startup, you'll need to authenticate via your browser. The server will display a URL in the console - just visit it and log in with your Hytale account. You will then need to authorize again from the link that appears once the server has started.
 
 ## How to use
 
