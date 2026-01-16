@@ -21,6 +21,7 @@ USE_AOT_CACHE="${USE_AOT_CACHE:-true}"
 AUTH_MODE="${AUTH_MODE:-authenticated}"
 ACCEPT_EARLY_PLUGINS="${ACCEPT_EARLY_PLUGINS:-false}"
 MAX_MEMORY="${MAX_MEMORY:-8192}"
+PATCHLINE="${PATCHLINE:-release}"
 
 # Check if HytaleServer.jar exists
 SERVER_JAR="$SERVER_FILES/Server/HytaleServer.jar"
@@ -73,6 +74,7 @@ STARTUP_CMD="${STARTUP_CMD} -jar ${SERVER_JAR}"
 STARTUP_CMD="${STARTUP_CMD} --assets /home/hytale/server-files/Assets.zip"
 STARTUP_CMD="${STARTUP_CMD} --bind 0.0.0.0:${DEFAULT_PORT}"
 STARTUP_CMD="${STARTUP_CMD} --auth-mode ${AUTH_MODE}"
+STARTUP_CMD="${STARTUP_CMD} --patchline ${PATCHLINE}"
 
 # Add optional arguments
 if [ "${DISABLE_SENTRY}" = "true" ]; then

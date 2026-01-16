@@ -75,6 +75,7 @@ export JVM_ARGS
 export SESSION_TOKEN
 export IDENTITY_TOKEN
 export OWNER_UUID
+export PATCHLINE
 
 # Start the server as hytale user
 su hytale -c "export PATH=\"$PATH\" && cd /home/hytale/server && \
@@ -95,6 +96,7 @@ su hytale -c "export PATH=\"$PATH\" && cd /home/hytale/server && \
     SESSION_TOKEN='${SESSION_TOKEN}' \
     IDENTITY_TOKEN='${IDENTITY_TOKEN}' \
     OWNER_UUID='${OWNER_UUID}' \
+    PATCHLINE='${PATCHLINE}' \
     ./start.sh" &
 
 # Process ID of su
